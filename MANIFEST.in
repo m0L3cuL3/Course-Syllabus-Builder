@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include course_syllabus_builder *.css
+recursive-include course_syllabus_builder *.csv
+recursive-include course_syllabus_builder *.html
+recursive-include course_syllabus_builder *.ico
+recursive-include course_syllabus_builder *.js
+recursive-include course_syllabus_builder *.json
+recursive-include course_syllabus_builder *.md
+recursive-include course_syllabus_builder *.png
+recursive-include course_syllabus_builder *.py
+recursive-include course_syllabus_builder *.svg
+recursive-include course_syllabus_builder *.txt
+recursive-exclude course_syllabus_builder *.pyc
