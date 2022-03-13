@@ -14,14 +14,7 @@
   "column_break_4",
   "college_name",
   "college_department",
-  "faculty_section",
-  "prepared_by",
-  "reviewed_by",
-  "approved_by",
-  "column_break_12",
-  "select_pos1",
-  "select_pos2",
-  "select_pos3"
+  "faculty_section"
  ],
  "fields": [
   {
@@ -73,45 +66,11 @@
    "fieldname": "faculty_section",
    "fieldtype": "Section Break",
    "label": "Faculty"
-  },
-  {
-   "fieldname": "prepared_by",
-   "fieldtype": "Data",
-   "label": "Prepared by"
-  },
-  {
-   "fieldname": "reviewed_by",
-   "fieldtype": "Data",
-   "label": "Reviewed by"
-  },
-  {
-   "fieldname": "approved_by",
-   "fieldtype": "Data",
-   "label": "Approved by"
-  },
-  {
-   "fieldname": "column_break_12",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "select_pos1",
-   "fieldtype": "Select",
-   "label": "Position 1"
-  },
-  {
-   "fieldname": "select_pos2",
-   "fieldtype": "Select",
-   "label": "Position 2"
-  },
-  {
-   "fieldname": "select_pos3",
-   "fieldtype": "Select",
-   "label": "Position 3"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-03-14 03:15:08.304430",
+ "modified": "2022-03-14 03:28:13.708417",
  "modified_by": "Administrator",
  "module": "Course Syllabus Builder",
  "name": "Course Syllabus",
