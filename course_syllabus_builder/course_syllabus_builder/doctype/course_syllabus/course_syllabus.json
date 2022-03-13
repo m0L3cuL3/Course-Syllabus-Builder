@@ -1,0 +1,135 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{course_code} - {course_title}",
+ "creation": "2022-03-14 01:26:37.389963",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "course_syllabus_builder",
+  "general_section",
+  "course_title",
+  "course_code",
+  "column_break_4",
+  "college_name",
+  "college_department",
+  "faculty_section",
+  "prepared_by",
+  "reviewed_by",
+  "approved_by",
+  "column_break_12",
+  "select_pos1",
+  "select_pos2",
+  "select_pos3"
+ ],
+ "fields": [
+  {
+   "fieldname": "course_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Course Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "course_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Course Code",
+   "reqd": 1
+  },
+  {
+   "fieldname": "college_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "College Name",
+   "options": "College Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "college_department",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Department Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "general_section",
+   "fieldtype": "Section Break",
+   "label": "General"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "course_syllabus_builder",
+   "fieldtype": "HTML",
+   "label": "Course Syllabus Builder",
+   "options": "<p class=\"alert alert-info\">Please insert necessary information.</p>\n\n<div class=\"jumbotron jumbotron-fluid\">\n  <div class=\"container\">\n    <h1 class=\"display-4\">Course Syllabus Builder</h1>\n    <p class=\"lead\">Creating course syllabuses made easier.</p>\n  </div>\n</div>",
+   "read_only": 1
+  },
+  {
+   "fieldname": "faculty_section",
+   "fieldtype": "Section Break",
+   "label": "Faculty"
+  },
+  {
+   "fieldname": "prepared_by",
+   "fieldtype": "Data",
+   "label": "Prepared by"
+  },
+  {
+   "fieldname": "reviewed_by",
+   "fieldtype": "Data",
+   "label": "Reviewed by"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Data",
+   "label": "Approved by"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "select_pos1",
+   "fieldtype": "Select",
+   "label": "Position 1"
+  },
+  {
+   "fieldname": "select_pos2",
+   "fieldtype": "Select",
+   "label": "Position 2"
+  },
+  {
+   "fieldname": "select_pos3",
+   "fieldtype": "Select",
+   "label": "Position 3"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-03-14 03:15:08.304430",
+ "modified_by": "Administrator",
+ "module": "Course Syllabus Builder",
+ "name": "Course Syllabus",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
