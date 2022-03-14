@@ -1,15 +1,23 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{full_name}",
  "creation": "2022-03-14 03:33:40.121620",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "faculty_section",
   "full_name",
   "first_name",
   "middle_initial",
-  "last_name"
+  "last_name",
+  "column_break_6",
+  "email_address",
+  "phone_number",
+  "phone_local_number",
+  "consultation_hours_section",
+  "consultation_table"
  ],
  "fields": [
   {
@@ -38,11 +46,49 @@
    "in_list_view": 1,
    "label": "Last Name",
    "reqd": 1
+  },
+  {
+   "fieldname": "faculty_section",
+   "fieldtype": "Section Break",
+   "label": "Faculty Details"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "email_address",
+   "fieldtype": "Data",
+   "label": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Int",
+   "label": "Phone",
+   "reqd": 1
+  },
+  {
+   "fieldname": "phone_local_number",
+   "fieldtype": "Int",
+   "label": "Phone (local)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "consultation_hours_section",
+   "fieldtype": "Section Break",
+   "label": "Consultation Hours"
+  },
+  {
+   "fieldname": "consultation_table",
+   "fieldtype": "Table",
+   "label": "Consultation Table",
+   "options": "Consultation Hours"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-03-14 03:35:01.974184",
+ "modified": "2022-03-14 17:35:00.724129",
  "modified_by": "Administrator",
  "module": "Course Syllabus Builder",
  "name": "Faculty",
