@@ -1,6 +1,10 @@
 # Course Syllabus Builder
 
+<p align="center">
+[![GitHub issues](https://img.shields.io/github/issues/m0L3cuL3/Course-Syllabus-Builder)](https://github.com/m0L3cuL3/Course-Syllabus-Builder/issues)
+![](https://img.shields.io/badge/version-0.0.1-green)
 Course Syllabus Builder is a web-based syllabus builder. Powered by Frappe Framework
+</p>
 
 ## Prerequisites
 - Ubuntu 20.04
