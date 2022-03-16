@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{full_name}",
+ "autoname": "format:{first_name} {middle_initial} {last_name}",
  "creation": "2022-03-14 03:33:40.121620",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -12,17 +12,30 @@
   "first_name",
   "middle_initial",
   "last_name",
+  "assigned_college",
   "column_break_6",
   "email_address",
   "phone_number",
   "phone_local_number",
   "consultation_hours_section",
-  "consultation_table"
+  "info_html_1",
+  "administrative_days",
+  "info_html_2",
+  "administrative_start_time",
+  "administrative_end_time",
+  "column_break_16",
+  "info_html_5",
+  "academic_days",
+  "info_html_4",
+  "academic_start_time",
+  "academic_end_time"
  ],
  "fields": [
   {
+   "bold": 1,
    "fieldname": "full_name",
    "fieldtype": "Data",
+   "in_filter": 1,
    "label": "Full Name",
    "read_only": 1
   },
@@ -30,6 +43,7 @@
    "fieldname": "first_name",
    "fieldtype": "Data",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "First Name",
    "reqd": 1
   },
@@ -44,6 +58,7 @@
    "fieldname": "last_name",
    "fieldtype": "Data",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Last Name",
    "reqd": 1
   },
@@ -80,15 +95,80 @@
    "label": "Consultation Hours"
   },
   {
-   "fieldname": "consultation_table",
-   "fieldtype": "Table",
-   "label": "Consultation Table",
-   "options": "Consultation Hours"
+   "fieldname": "assigned_college",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "College",
+   "options": "College Department",
+   "reqd": 1
+  },
+  {
+   "fieldname": "administrative_start_time",
+   "fieldtype": "Data",
+   "label": "Administrative Start Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "administrative_end_time",
+   "fieldtype": "Data",
+   "label": "Administrative End Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "academic_start_time",
+   "fieldtype": "Data",
+   "label": "Academic Start Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "academic_end_time",
+   "fieldtype": "Data",
+   "label": "Academic End Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "info_html_1",
+   "fieldtype": "HTML",
+   "label": "AdDays",
+   "options": "<p class=\"alert alert-info\">You have to input the <strong>ADMINISTRATIVE DAYS</strong> manually in the textbox.</p>\n\n<p class=\"alert alert-success\">\n<strong>EXAMPLE 1:</strong> Mon,Wed,Fri\n<br>\n<strong>EXAMPLE 2:</strong> Monday,Wednesday,Friday\n</p>"
+  },
+  {
+   "fieldname": "info_html_2",
+   "fieldtype": "HTML",
+   "options": "<br>\n<p class=\"alert alert-info\">You have to input the <strong>ADMINISTRATIVE TIME</strong> manually in the textbox.</p>\n\n<p class=\"alert alert-success\"><strong>EXAMPLE:</strong> 1:30 PM</p>"
+  },
+  {
+   "fieldname": "administrative_days",
+   "fieldtype": "Data",
+   "label": "Administrative Days",
+   "reqd": 1
+  },
+  {
+   "fieldname": "academic_days",
+   "fieldtype": "Data",
+   "label": "Academic Days",
+   "reqd": 1
+  },
+  {
+   "fieldname": "info_html_5",
+   "fieldtype": "HTML",
+   "label": "AcDays",
+   "options": "<p class=\"alert alert-info\">You have to input the <strong>ACADEMIC DAYS</strong> manually in the textbox.</p>\n\n<p class=\"alert alert-success\">\n<strong>EXAMPLE 1:</strong> Mon,Wed,Fri\n<br>\n<strong>EXAMPLE 2:</strong> Monday,Wednesday,Friday\n</p>"
+  },
+  {
+   "fieldname": "info_html_4",
+   "fieldtype": "HTML",
+   "options": "<br>\n<p class=\"alert alert-info\">You have to input the <strong>ACADEMIC TIME</strong> manually in the textbox.</p>\n\n<p class=\"alert alert-success\"><strong>EXAMPLE:</strong> 1:30 PM</p>"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-03-14 17:35:00.724129",
+ "modified": "2022-03-16 19:26:04.220384",
  "modified_by": "Administrator",
  "module": "Course Syllabus Builder",
  "name": "Faculty",
@@ -103,10 +183,12 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "select": 1,
    "share": 1,
    "write": 1
   }
  ],
+ "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC"
 }

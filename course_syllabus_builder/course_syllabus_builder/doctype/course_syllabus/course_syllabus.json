@@ -14,13 +14,23 @@
   "column_break_4",
   "college_name",
   "college_department",
-  "faculty_section"
+  "faculty_section",
+  "info_html_2",
+  "prepared_by",
+  "reviewed_by",
+  "approved_by",
+  "column_break_12",
+  "info_html_1",
+  "role_1",
+  "role_2",
+  "role_3"
  ],
  "fields": [
   {
    "fieldname": "course_title",
    "fieldtype": "Data",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Course Title",
    "reqd": 1
   },
@@ -28,6 +38,7 @@
    "fieldname": "course_code",
    "fieldtype": "Data",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Course Code",
    "reqd": 1
   },
@@ -35,6 +46,7 @@
    "fieldname": "college_name",
    "fieldtype": "Link",
    "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "College Name",
    "options": "College Department",
    "reqd": 1
@@ -66,11 +78,63 @@
    "fieldname": "faculty_section",
    "fieldtype": "Section Break",
    "label": "Faculty"
+  },
+  {
+   "fetch_from": "prepared_by.assigned_college",
+   "fieldname": "prepared_by",
+   "fieldtype": "Link",
+   "label": "Prepared by",
+   "options": "Faculty"
+  },
+  {
+   "fetch_from": "college_name",
+   "fieldname": "reviewed_by",
+   "fieldtype": "Link",
+   "label": "Reviewed by",
+   "options": "Faculty"
+  },
+  {
+   "fetch_from": "college_name",
+   "fieldname": "approved_by",
+   "fieldtype": "Link",
+   "label": "Approved by",
+   "options": "Faculty"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "role_1",
+   "fieldtype": "Data",
+   "label": "Role #1"
+  },
+  {
+   "fieldname": "role_2",
+   "fieldtype": "Data",
+   "label": "Role #2"
+  },
+  {
+   "fieldname": "role_3",
+   "fieldtype": "Data",
+   "label": "Role #3"
+  },
+  {
+   "fieldname": "info_html_1",
+   "fieldtype": "HTML",
+   "label": "info1",
+   "options": "<p class=\"alert alert-info\">\nYou have to input the <strong>ROLES</strong> manually.\n</p>\n<p class=\"alert alert-success\">\n<strong>EXAMPLE 1:</strong> Faculty<br>\n<strong>EXAMPLE 2:</strong> Chair, Department of Computer<br>\n<strong>EXAMPLE 3:</strong> Dean, College of Computer<br>\n</p>\n"
+  },
+  {
+   "fieldname": "info_html_2",
+   "fieldtype": "HTML",
+   "label": "info2",
+   "options": "<p class=\"alert alert-info\">\nPlease select a <strong>FACULTY</strong>. If you don't see any listed faculty, please create a new faculty.\n</p>\n<br><br><br><br>"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-03-14 03:28:13.708417",
+ "modified": "2022-03-16 19:29:35.796388",
  "modified_by": "Administrator",
  "module": "Course Syllabus Builder",
  "name": "Course Syllabus",
@@ -85,6 +149,7 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "select": 1,
    "share": 1,
    "write": 1
   }

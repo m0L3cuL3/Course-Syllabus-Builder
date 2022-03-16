@@ -26,7 +26,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-03-14 02:38:26.198562",
+ "modified": "2022-03-16 19:20:48.974976",
  "modified_by": "Administrator",
  "module": "Course Syllabus Builder",
  "name": "College Department",
@@ -41,6 +41,7 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "select": 1,
    "share": 1,
    "write": 1
   }

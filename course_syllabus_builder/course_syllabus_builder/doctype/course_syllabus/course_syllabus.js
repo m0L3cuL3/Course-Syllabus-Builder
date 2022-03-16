@@ -20,6 +20,7 @@ frappe.ui.form.on('Course Syllabus', {
 					})
 					
 					frm.set_df_property('college_department', 'options', dept)
+
 					refresh_field("college_department")
 			
 				})
@@ -48,6 +49,7 @@ frappe.ui.form.on('Course Syllabus', {
 				})
 				
 				frm.set_df_property('college_department', 'options', dept)
+
 				refresh_field("college_department")
 		
 			})
@@ -55,3 +57,31 @@ frappe.ui.form.on('Course Syllabus', {
 	  
 	}
 });
+
+frappe.ui.form.on('Course Syllabus', {
+	college_name: function(frm){
+		frm.fields_dict['prepared_by'].get_query = function(doc) {
+			return {
+				filters: {
+					"assigned_college": frm.doc.college_name
+				}
+			}
+		}
+		frm.fields_dict['reviewed_by'].get_query = function(doc) {
+			return {
+				filters: {
+					"assigned_college": frm.doc.college_name
+				}
+			}
+		}
+		frm.fields_dict['approved_by'].get_query = function(doc) {
+			return {
+				filters: {
+					"assigned_college": frm.doc.college_name
+				}
+			}
+		}
+	}
+});
+
+
