@@ -89,6 +89,8 @@ bench set-redis-socketio-host redis-socketio:6379
 ```
 
 Create new-site. (replace site_name with your desired name.)
+
+Default MySQL password: **123**
 ```bash
 bench new-site <site_name> --no-mariadb-socket
 ```
