@@ -1,0 +1,53 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-03-17 17:36:06.757417",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "plo_department",
+  "graduate_attribute",
+  "program_learning_outcomes_code",
+  "program_learning_outcomes",
+  "peoilo_mapping"
+ ],
+ "fields": [
+  {
+   "fieldname": "graduate_attribute",
+   "fieldtype": "Data",
+   "label": "Graduate Attribute"
+  },
+  {
+   "fieldname": "program_learning_outcomes_code",
+   "fieldtype": "Data",
+   "label": "Program Learning Outcomes Code"
+  },
+  {
+   "fieldname": "program_learning_outcomes",
+   "fieldtype": "Long Text",
+   "label": "Program Learning Outcomes"
+  },
+  {
+   "fieldname": "peoilo_mapping",
+   "fieldtype": "Data",
+   "label": "PEO/ILO Mapping"
+  },
+  {
+   "fieldname": "plo_department",
+   "fieldtype": "Select",
+   "label": "Department"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-03-17 18:28:01.950118",
+ "modified_by": "Administrator",
+ "module": "Course Syllabus Builder",
+ "name": "Program Learning Outcomes",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
