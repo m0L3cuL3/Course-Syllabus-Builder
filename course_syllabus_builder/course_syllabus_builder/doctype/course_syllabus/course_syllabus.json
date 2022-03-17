@@ -23,7 +23,12 @@
   "info_html_1",
   "role_1",
   "role_2",
-  "role_3"
+  "role_3",
+  "plo_section",
+  "html_19",
+  "html_20",
+  "html_21",
+  "plo_table"
  ],
  "fields": [
   {
@@ -130,11 +135,37 @@
    "fieldtype": "HTML",
    "label": "info2",
    "options": "<p class=\"alert alert-info\">\nPlease select a <strong>FACULTY</strong>. If you don't see any listed faculty, please create a new faculty.\n</p>\n<br><br><br><br>"
+  },
+  {
+   "fieldname": "plo_section",
+   "fieldtype": "Section Break",
+   "label": "Program Learning Outcomes"
+  },
+  {
+   "bold": 1,
+   "fieldname": "plo_table",
+   "fieldtype": "Table",
+   "label": "Program Learning Outcomes",
+   "options": "Program Learning Outcomes"
+  },
+  {
+   "fieldname": "html_19",
+   "fieldtype": "HTML",
+   "options": "<p class=\"alert alert-info\">\nYou can click the <strong>EDIT</strong> button on the right of the table to access a more open GUI. (add row first)\n</p>\n\n<p class=\"alert alert-success\">\n<strong>EXAMPLES:</strong><br><br>\n<strong>Graduate Attribute:</strong> Knowledge for Solving\nComputing Problems<br><br>\n<strong>Program Learning Outcomes Code:</strong> CS01<br><br>\n<strong>Program Learning Outcomes:</strong> Apply knowledge of computing fundamentals, knowledge of a computing specialization, and mathematics,\nscience, and domain knowledge appropriate for the computing specialization to the abstraction and\nconceptualization of computing models from defined problems and requirements.<br><br>\n<strong>PEO/ILO Mapping:</strong> AE, GC\n</p>"
+  },
+  {
+   "fieldname": "html_20",
+   "fieldtype": "HTML"
+  },
+  {
+   "fieldname": "html_21",
+   "fieldtype": "HTML",
+   "options": "<p class=\"alert alert-danger\">\nDo not alternate the <strong>DEPARTMENTS</strong>. Only change the department once you've completed one department.\n</p>"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-03-16 19:29:35.796388",
+ "modified": "2022-03-17 18:25:46.616201",
  "modified_by": "Administrator",
  "module": "Course Syllabus Builder",
  "name": "Course Syllabus",

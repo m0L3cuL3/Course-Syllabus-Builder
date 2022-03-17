@@ -20,6 +20,11 @@ frappe.ui.form.on('Course Syllabus', {
 					})
 					
 					frm.set_df_property('college_department', 'options', dept)
+					frm.fields_dict.plo_table.grid.update_docfield_property(
+						"plo_department",
+						"options",
+						dept
+					)
 
 					refresh_field("college_department")
 			
@@ -49,6 +54,11 @@ frappe.ui.form.on('Course Syllabus', {
 				})
 				
 				frm.set_df_property('college_department', 'options', dept)
+				frm.fields_dict.plo_table.grid.update_docfield_property(
+					"plo_department",
+					"options",
+					dept
+				)
 
 				refresh_field("college_department")
 		
