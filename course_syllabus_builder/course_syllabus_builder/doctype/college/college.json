@@ -13,12 +13,12 @@
   {
    "fieldname": "college",
    "fieldtype": "Data",
-   "label": "college"
+   "label": "College"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-03-16 19:20:31.014474",
+ "modified": "2022-03-19 00:56:08.280201",
  "modified_by": "Administrator",
  "module": "Course Syllabus Builder",
  "name": "College",

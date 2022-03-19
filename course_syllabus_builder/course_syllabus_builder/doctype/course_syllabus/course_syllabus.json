@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:{course_code} - {course_title}",
+ "autoname": "format:[{college_name}-{#####}] {course_code}",
  "creation": "2022-03-14 01:26:37.389963",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -9,6 +9,7 @@
  "field_order": [
   "course_syllabus_builder",
   "general_section",
+  "course_main",
   "course_title",
   "course_code",
   "column_break_4",
@@ -16,52 +17,42 @@
   "college_department",
   "faculty_section",
   "info_html_2",
-  "prepared_by",
-  "reviewed_by",
-  "approved_by",
-  "column_break_12",
-  "info_html_1",
-  "role_1",
-  "role_2",
-  "role_3",
+  "faculty_roles",
   "plo_section",
   "html_19",
-  "html_20",
-  "html_21",
   "plo_table"
  ],
  "fields": [
   {
    "fieldname": "course_title",
-   "fieldtype": "Data",
+   "fieldtype": "Read Only",
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Course Title",
-   "reqd": 1
+   "options": "course.course_title"
   },
   {
    "fieldname": "course_code",
-   "fieldtype": "Data",
+   "fieldtype": "Read Only",
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Course Code",
-   "reqd": 1
+   "options": "course.course_code"
   },
   {
    "fieldname": "college_name",
-   "fieldtype": "Link",
+   "fieldtype": "Read Only",
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "College Name",
-   "options": "College Department",
-   "reqd": 1
+   "options": "course.college_name"
   },
   {
    "fieldname": "college_department",
-   "fieldtype": "Select",
+   "fieldtype": "Read Only",
    "in_list_view": 1,
    "label": "Department Name",
-   "reqd": 1
+   "options": "course.college_department"
   },
   {
    "fieldname": "general_section",
@@ -85,56 +76,10 @@
    "label": "Faculty"
   },
   {
-   "fetch_from": "prepared_by.assigned_college",
-   "fieldname": "prepared_by",
-   "fieldtype": "Link",
-   "label": "Prepared by",
-   "options": "Faculty"
-  },
-  {
-   "fetch_from": "college_name",
-   "fieldname": "reviewed_by",
-   "fieldtype": "Link",
-   "label": "Reviewed by",
-   "options": "Faculty"
-  },
-  {
-   "fetch_from": "college_name",
-   "fieldname": "approved_by",
-   "fieldtype": "Link",
-   "label": "Approved by",
-   "options": "Faculty"
-  },
-  {
-   "fieldname": "column_break_12",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "role_1",
-   "fieldtype": "Data",
-   "label": "Role #1"
-  },
-  {
-   "fieldname": "role_2",
-   "fieldtype": "Data",
-   "label": "Role #2"
-  },
-  {
-   "fieldname": "role_3",
-   "fieldtype": "Data",
-   "label": "Role #3"
-  },
-  {
-   "fieldname": "info_html_1",
-   "fieldtype": "HTML",
-   "label": "info1",
-   "options": "<p class=\"alert alert-info\">\nYou have to input the <strong>ROLES</strong> manually.\n</p>\n<p class=\"alert alert-success\">\n<strong>EXAMPLE 1:</strong> Faculty<br>\n<strong>EXAMPLE 2:</strong> Chair, Department of Computer<br>\n<strong>EXAMPLE 3:</strong> Dean, College of Computer<br>\n</p>\n"
-  },
-  {
    "fieldname": "info_html_2",
    "fieldtype": "HTML",
    "label": "info2",
-   "options": "<p class=\"alert alert-info\">\nPlease select a <strong>FACULTY</strong>. If you don't see any listed faculty, please create a new faculty.\n</p>\n<br><br><br><br>"
+   "options": "<p class=\"alert alert-info\">\nPlease select a <strong>FACULTY</strong>. If you don't see any listed faculty, please create a new faculty.\n</p>"
   },
   {
    "fieldname": "plo_section",
@@ -142,30 +87,33 @@
    "label": "Program Learning Outcomes"
   },
   {
-   "bold": 1,
-   "fieldname": "plo_table",
-   "fieldtype": "Table",
-   "label": "Program Learning Outcomes",
-   "options": "Program Learning Outcomes"
-  },
-  {
    "fieldname": "html_19",
    "fieldtype": "HTML",
    "options": "<p class=\"alert alert-info\">\nYou can click the <strong>EDIT</strong> button on the right of the table to access a more open GUI. (add row first)\n</p>\n\n<p class=\"alert alert-success\">\n<strong>EXAMPLES:</strong><br><br>\n<strong>Graduate Attribute:</strong> Knowledge for Solving\nComputing Problems<br><br>\n<strong>Program Learning Outcomes Code:</strong> CS01<br><br>\n<strong>Program Learning Outcomes:</strong> Apply knowledge of computing fundamentals, knowledge of a computing specialization, and mathematics,\nscience, and domain knowledge appropriate for the computing specialization to the abstraction and\nconceptualization of computing models from defined problems and requirements.<br><br>\n<strong>PEO/ILO Mapping:</strong> AE, GC\n</p>"
   },
   {
-   "fieldname": "html_20",
-   "fieldtype": "HTML"
+   "fieldname": "faculty_roles",
+   "fieldtype": "Table",
+   "label": "Faculty Roles",
+   "options": "Faculty Role"
   },
   {
-   "fieldname": "html_21",
-   "fieldtype": "HTML",
-   "options": "<p class=\"alert alert-danger\">\nDo not alternate the <strong>DEPARTMENTS</strong>. Only change the department once you've completed one department.\n</p>"
+   "fieldname": "plo_table",
+   "fieldtype": "Table",
+   "label": "Add/Delete Program Learning Outcomes",
+   "options": "Program Learning Outcomes"
+  },
+  {
+   "fieldname": "course_main",
+   "fieldtype": "Link",
+   "label": "Course",
+   "options": "Course",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-03-17 18:25:46.616201",
+ "modified": "2022-03-19 18:15:36.483964",
  "modified_by": "Administrator",
  "module": "Course Syllabus Builder",
  "name": "Course Syllabus",
