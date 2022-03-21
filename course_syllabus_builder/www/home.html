@@ -6,14 +6,24 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css"> -->
+  
+  <!-- INTER Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet"> 
+   <!--INTER Font  -->
+
+  <script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=cDZ-fXI0r7I0cXhLcNMhSdhnVCo4kNmyv2NL_7Hm8cXuRL0O3s0fKNSO-MWpZN5lXwNw8yj3vp1x5bVNOuArr-QlN6uC54hNasXsYuGgmUMzik7GRFGcONaCWUSeBgW0UQi3AwG2GOLnHs2WIFrMRw" charset="UTF-8"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
   body {
-    font: 400 15px Lato, sans-serif;    
+    font: 400 15px Inter, sans-serif;    
     line-height: 1.8;
+  }
+  h1 {
+    font-weight: 700;
   }
   h2 {
     font-size: 24px;
@@ -30,11 +40,25 @@
     margin-bottom: 30px;
   }  
   .jumbotron {
-    padding: 100px 25px;
-    font-family: Montserrat, sans-serif;
+    padding: 200px 25px;
+    font-family: Inter;
+    color: #fff;
+    padding-left: 15%;
+    background-image: url("girl.png");
+    opacity: 0.9;
+    background-position: center;
+    background-position-y: 40%;
+    background-position-x: 20%;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
   .container-fluid {
-    padding: 60px 50px;
+    padding: 60px 60px;
+    padding-left: 15%;
+    padding-right: 15%;
+    /* margin: 15%; */
   }
   .bg-grey {
     background-color: #f6f6f6;
@@ -120,12 +144,18 @@
     border: 0;
     font-size: 12px !important;
     line-height: 1.42857143 !important;
-    letter-spacing: 4px;
     border-radius: 0;
-    font-family: Montserrat, sans-serif;
+    font-family: Inter;
+    padding: 8px;
+  }
+  .navbar-brand {
+    display: inline-flex;
+  }
+  .navbar-nav {
+    letter-spacing: 4px;
   }
   .navbar li a, .navbar .navbar-brand {
-    color: black !important;
+    color: rgb(61, 61, 61) !important;
   }
   .navbar-nav li a:hover, .navbar-nav li.active a {
     color: #f4511e !important;
@@ -186,7 +216,7 @@
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-
+<!-- NAV BAR -->
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
@@ -195,58 +225,57 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage">Logo</a>
+      <a class="navbar-brand" href="#myPage">
+        <img src = "CSB Logo.svg" alt="CSB Logo" loading="lazy"/>
+        &nbsp;
+        Course Syllabus Builder
+      </a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#services">SERVICES</a></li>
+        <li><a href="/login">LOG IN</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<div class="jumbotron text-center">
-  <h1>Course Syllabus Builder</h1> 
-  <p>Creating course syllabi made easier.</p>
-  <a href="/login">
-    <button type="button" class="btn btn-success btn-lg">Log In</button>
-  </a>
-  <a href="/login#signup">
-    <button type="button" class="btn btn-primary btn-lg">Sign Up</button>
-  </a>
+<!-- HEADER -->
+<div class="jumbotron text-left">
+  <h1>Course Syllabus <br> Builder</h1> 
+  <p>We just made it easier.</p>
+  <a href="#about"><button type="button" class="btn btn-primary btn-lg">Learn more</button></a>
 </div>
 
 <!-- Container (About Section) -->
-<div id="about" class="container-fluid">
+<!-- <div id="about" class="container-fluid">
   <div class="row">
-    <div class="col-sm-8">
-      <h2>About Company Page</h2><br>
+    <div class="col-sm-10">
+      <h2>About</h2><br>
       <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <br><button class="btn btn-default btn-lg">Get in Touch</button>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-1">
       <span class="glyphicon glyphicon-signal logo"></span>
     </div>
   </div>
-</div>
+</div> -->
 
-<div class="container-fluid bg-grey">
+<div id="about" class="container-fluid">
   <div class="row">
     <div class="col-sm-4">
+      <!-- <img src="CSB Logo.svg" alt="Aboutlogo"> -->
       <span class="glyphicon glyphicon-globe logo slideanim"></span>
     </div>
     <div class="col-sm-8">
-      <h2>Our Values</h2><br>
-      <h4><strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
-      <p><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
+      <h2>About</h2><br>
+      <h4>Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
+      </div>
   </div>
 </div>
 
 <!-- Container (Services Section) -->
-<div id="services" class="container-fluid text-center">
+<!-- <div id="services" class="container-fluid text-center">
   <h2>SERVICES</h2>
   <h4>What we offer</h4>
   <br>
@@ -285,10 +314,10 @@
       <p>Lorem ipsum dolor sit amet..</p>
     </div>
   </div>
-</div>
+</div> -->
 
 <!-- Container (Pricing Section) -->
-<div id="pricing" class="container-fluid">
+<!-- <div id="pricing" class="container-fluid">
   <div class="text-center">
     <h2>Pricing</h2>
     <h4>Choose a payment plan that works for you</h4>
@@ -352,7 +381,7 @@
       </div>      
     </div>    
   </div>
-</div>
+</div> -->
 
 <footer class="container-fluid text-center">
   <p>Powered by Frappe Framework</p>
