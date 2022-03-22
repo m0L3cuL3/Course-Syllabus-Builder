@@ -10,17 +10,19 @@
   "course_syllabus_builder",
   "general_section",
   "course_main",
-  "course_title",
-  "course_code",
-  "column_break_4",
-  "college_name",
-  "college_department",
   "faculty_section",
   "info_html_2",
   "faculty_roles",
   "plo_section",
   "html_19",
-  "plo_table"
+  "plo_table",
+  "college_course_section",
+  "college_html",
+  "course_code",
+  "course_title",
+  "college_name",
+  "college_department",
+  "course_schedule"
  ],
  "fields": [
   {
@@ -60,14 +62,10 @@
    "label": "General"
   },
   {
-   "fieldname": "column_break_4",
-   "fieldtype": "Column Break"
-  },
-  {
    "fieldname": "course_syllabus_builder",
    "fieldtype": "HTML",
    "label": "Course Syllabus Builder",
-   "options": "<p class=\"alert alert-info\">Please insert necessary information.</p>\n\n<div class=\"jumbotron jumbotron-fluid\">\n  <div class=\"container\">\n    <h1 class=\"display-4\">Course Syllabus Builder</h1>\n    <p class=\"lead\">Creating course syllabuses made easier.</p>\n  </div>\n</div>",
+   "options": "<p class=\"alert alert-info\">Please insert necessary information.</p>",
    "read_only": 1
   },
   {
@@ -98,22 +96,40 @@
    "options": "Faculty Role"
   },
   {
-   "fieldname": "plo_table",
-   "fieldtype": "Table",
-   "label": "Add/Delete Program Learning Outcomes",
-   "options": "Program Learning Outcomes"
-  },
-  {
    "fieldname": "course_main",
    "fieldtype": "Link",
    "label": "Course",
    "options": "Course",
    "reqd": 1
+  },
+  {
+   "fieldname": "plo_table",
+   "fieldtype": "Table",
+   "label": "PLO Table",
+   "options": "Program Learning Outcomes"
+  },
+  {
+   "fieldname": "college_html",
+   "fieldtype": "HTML",
+   "options": "\n"
+  },
+  {
+   "fetch_from": "course.schedule",
+   "fieldname": "course_schedule",
+   "fieldtype": "Table",
+   "label": "Schedule",
+   "options": "Course Schedule",
+   "read_only": 1
+  },
+  {
+   "fieldname": "college_course_section",
+   "fieldtype": "Section Break",
+   "label": "College and Course Details"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-03-19 18:15:36.483964",
+ "modified": "2022-03-22 17:32:00.376094",
  "modified_by": "Administrator",
  "module": "Course Syllabus Builder",
  "name": "Course Syllabus",

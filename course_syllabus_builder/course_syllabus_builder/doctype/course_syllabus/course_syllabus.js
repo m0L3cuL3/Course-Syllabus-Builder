@@ -21,7 +21,7 @@ frappe.ui.form.on('Course Syllabus', {
 					
 					//frm.set_df_property('college_department', 'options', dept)
 					frm.fields_dict.plo_table.grid.update_docfield_property(
-						"plo_department",
+						"college_department",
 						"options",
 						dept
 					)
@@ -55,7 +55,7 @@ frappe.ui.form.on('Course Syllabus', {
 				
 				//frm.set_df_property('college_department', 'options', dept)
 				frm.fields_dict.plo_table.grid.update_docfield_property(
-					"plo_department",
+					"college_department",
 					"options",
 					dept
 				)
@@ -68,6 +68,39 @@ frappe.ui.form.on('Course Syllabus', {
 	}
 });
 
+frappe.ui.form.on("Course Syllabus", {
+    course_main: function(frm){
+
+		let course_title = frm.doc.course_main;
+	  
+		if(course_title){
+			frappe.call({
+				method: "course_syllabus_builder.course_syllabus_builder.doctype.course.course.get_course_schedule",
+				args: {course_title: course_title}
+			}).done((r) => {
+				console.log(r.message)
+
+				frm.doc.course_schedule = []
+
+				$.each(r.message, function(_i, e){
+					console.log(e)
+					let entry = frm.add_child('course_schedule')
+					entry.section = e.section
+					entry.day_time = e.day_time
+					entry.room = e.room
+				})
+				
+				
+
+				refresh_field("course_schedule")
+		
+			})
+	   }
+	  
+	}
+});
+
+// adding fetch
 frappe.ui.form.on('Course Syllabus', {
 	refresh: function(frm){
 		console.log("test")
@@ -78,6 +111,7 @@ frappe.ui.form.on('Course Syllabus', {
 	}
 });
 
+// filter faculty by assigned college.
 frappe.ui.form.on('Course Syllabus', {
 	college_name: function(frm){
 		frm.fields_dict['faculty_roles'].grid.get_field('faculty').get_query = function(doc) {
@@ -90,20 +124,8 @@ frappe.ui.form.on('Course Syllabus', {
 	}
 });
 
-// frappe.ui.form.on('Course Syllabus', {
-// 	refresh: function(frm) {
-// 		set_css(frm)
-// 	}
-// 	// refresh: function(frm) {
-// 	// 	frm.get_field('add_dept').$input.addClass('btn-primary');
-// 	// }
-// });
 
-// frappe.ui.form.on('Course Syllabus', {
-// 	add_dept: function(frm) {
-// 		console.log(frm.doc.college_name)
-// 	}
-// });
+
 
 // var set_css = function (frm) {
 // 	document.querySelectorAll("[data-fieldname=add_dept]")[1].style.color ='white';

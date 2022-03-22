@@ -10,7 +10,9 @@
   "course_code",
   "course_title",
   "college_name",
-  "college_department"
+  "college_department",
+  "ins_html",
+  "schedule"
  ],
  "fields": [
   {
@@ -45,11 +47,22 @@
    "in_standard_filter": 1,
    "label": "Department",
    "reqd": 1
+  },
+  {
+   "fieldname": "schedule",
+   "fieldtype": "Table",
+   "label": "Schedule",
+   "options": "Course Schedule"
+  },
+  {
+   "fieldname": "ins_html",
+   "fieldtype": "HTML",
+   "options": "<p class=\"alert alert-success\">\n<strong>SCHEDULE EXAMPLES:</strong><br><br>\n<strong>Section:</strong> CC20 A<br><br>\n<strong>Day/Time:</strong> MTh 10:30am-1:30pm <br><br>\n<strong>Room:</strong> FH 205\n</p>"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-03-19 17:54:03.913852",
+ "modified": "2022-03-22 16:02:08.201186",
  "modified_by": "Administrator",
  "module": "Course Syllabus Builder",
  "name": "Course",

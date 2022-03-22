@@ -20,15 +20,3 @@ def get_college_departments(college):
 	""", as_dict=True)
 
 	return departments
-
-# def get_faculty_by_college(college):
-# 	faculty = frappe.db.sql(f"""
-# 		SELECT
-# 		name
-# 		FROM
-# 		`tabFaculty`
-# 		WHERE
-# 		assigned_college = '{college}'
-# 	""", as_dict=True)
-
-# 	return faculty

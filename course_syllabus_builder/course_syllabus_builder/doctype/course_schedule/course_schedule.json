@@ -1,44 +1,45 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2022-03-19 15:13:30.565797",
+ "creation": "2022-03-22 15:52:16.909909",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "faculty",
-  "position",
-  "title"
+  "section",
+  "day_time",
+  "room"
  ],
  "fields": [
   {
-   "fieldname": "faculty",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "label": "Faculty",
-   "options": "Faculty"
-  },
-  {
-   "fieldname": "position",
-   "fieldtype": "Select",
-   "in_list_view": 1,
-   "label": "Position",
-   "options": "Prepared by\nReviewed by\nApproved by"
-  },
-  {
-   "fieldname": "title",
+   "fieldname": "section",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Title"
+   "label": "Section",
+   "reqd": 1
+  },
+  {
+   "fieldname": "day_time",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Day/Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "room",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Room",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2022-03-21 21:31:36.663601",
+ "modified": "2022-03-22 15:58:56.995032",
  "modified_by": "Administrator",
  "module": "Course Syllabus Builder",
- "name": "Faculty Role",
+ "name": "Course Schedule",
  "owner": "Administrator",
  "permissions": [],
  "sort_field": "modified",
