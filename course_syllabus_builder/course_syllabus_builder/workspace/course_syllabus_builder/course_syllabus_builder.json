@@ -1,6 +1,8 @@
 {
+ "cards_label": "App List",
  "category": "Modules",
  "charts": [],
+ "charts_label": "",
  "creation": "2022-03-14 17:06:07.892341",
  "developer_mode_only": 0,
  "disable_user_customization": 1,
@@ -8,13 +10,89 @@
  "doctype": "Workspace",
  "extends_another_page": 0,
  "hide_custom": 0,
- "icon": "",
+ "icon": "customization",
  "idx": 0,
  "is_default": 0,
  "is_standard": 1,
  "label": "Course Syllabus Builder",
- "links": [],
- "modified": "2022-03-21 20:02:59.499713",
+ "links": [
+  {
+   "hidden": 0,
+   "icon": "tool",
+   "is_query_report": 0,
+   "label": "Course Syllabus Builder",
+   "link_to": "",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Course",
+   "link_to": "Course",
+   "link_type": "DocType",
+   "onboard": 0,
+   "only_for": "",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Course Syllabus App",
+   "link_to": "Course Syllabus",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Colleges and Departments",
+   "link_to": "",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "College",
+   "link_to": "College",
+   "link_type": "DocType",
+   "onboard": 0,
+   "only_for": "",
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "College Department",
+   "link_to": "College Department",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Others",
+   "link_to": "",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Faculty",
+   "link_to": "Faculty",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2022-03-23 22:47:57.153665",
  "modified_by": "Administrator",
  "module": "Course Syllabus Builder",
  "name": "Course Syllabus Builder",
@@ -25,34 +103,39 @@
  "shortcuts": [
   {
    "doc_view": "List",
-   "icon": "",
+   "icon": "active",
    "label": "Course Syllabus",
    "link_to": "Course Syllabus",
    "type": "DocType"
   },
   {
    "doc_view": "List",
+   "icon": "file",
    "label": "Course",
    "link_to": "Course",
    "type": "DocType"
   },
   {
    "doc_view": "List",
+   "icon": "education",
    "label": "College",
    "link_to": "College",
    "type": "DocType"
   },
   {
    "doc_view": "List",
+   "icon": "education",
    "label": "College Department",
    "link_to": "College Department",
    "type": "DocType"
   },
   {
    "doc_view": "List",
+   "icon": "users",
    "label": "Faculty",
    "link_to": "Faculty",
    "type": "DocType"
   }
- ]
+ ],
+ "shortcuts_label": "General Apps"
 }

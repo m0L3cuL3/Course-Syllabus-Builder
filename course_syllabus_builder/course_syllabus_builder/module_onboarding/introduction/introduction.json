@@ -1,0 +1,26 @@
+{
+ "allow_roles": [
+  {
+   "role": "Faculty"
+  }
+ ],
+ "creation": "2022-03-23 22:46:36.643064",
+ "docstatus": 0,
+ "doctype": "Module Onboarding",
+ "documentation_url": "https://github.com/m0L3cuL3/Course-Syllabus-Builder",
+ "idx": 0,
+ "is_complete": 0,
+ "modified": "2022-03-23 22:46:36.643064",
+ "modified_by": "Administrator",
+ "module": "Course Syllabus Builder",
+ "name": "Introduction",
+ "owner": "Administrator",
+ "steps": [
+  {
+   "step": "College Step"
+  }
+ ],
+ "subtitle": "We just made it easier.",
+ "success_message": "Thank you for using Course Syllabus Builder!",
+ "title": "Course Syllabus Builder"
+}
