@@ -5,31 +5,33 @@ frappe.ui.form.on('Course Syllabus', {
 	refresh: function(frm) {
 		let college = frm.doc.college_name;
 		  
-			if(college){
-				frappe.call({
-					method: "course_syllabus_builder.course_syllabus_builder.doctype.course_syllabus.course_syllabus.get_college_departments",
-					args: {college: college}
-				}).done((r) => {
-					console.log(r.message)
-	
-					let dept = []
-				
-					$.each(r.message, function(_i, e){
-						console.log(e)
-						dept[_i] = e.department
-					})
-					
-					//frm.set_df_property('college_department', 'options', dept)
-					frm.fields_dict.plo_table.grid.update_docfield_property(
-						"college_department",
-						"options",
-						dept
-					)
+		if(college){
+			frappe.call({
+				method: "course_syllabus_builder.course_syllabus_builder.doctype.course_syllabus.course_syllabus.get_college_departments",
+				args: {college: college}
+			}).done((r) => {
+				console.log(r.message)
 
-					refresh_field("college_department")
+				let dept = []
 			
+				$.each(r.message, function(_i, e){
+					console.log(e)
+					dept[_i] = e.department
 				})
-		   }
+				
+				//frm.set_df_property('college_department', 'options', dept)
+				frm.fields_dict.plo_table.grid.update_docfield_property(
+					"college_department",
+					"options",
+					dept
+				)
+				refresh_field("college_department")
+		
+			})
+		}
+
+		frm.change_custom_button_type('Closed', 'Set Status', 'danger');
+		
 	}
 })
 

@@ -22,7 +22,8 @@
   "course_title",
   "college_name",
   "college_department",
-  "course_schedule"
+  "course_schedule",
+  "amended_from"
  ],
  "fields": [
   {
@@ -125,11 +126,20 @@
    "fieldname": "college_course_section",
    "fieldtype": "Section Break",
    "label": "College and Course Details"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Course Syllabus",
+   "print_hide": 1,
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-03-22 17:32:00.376094",
+ "modified": "2022-03-27 22:21:16.956325",
  "modified_by": "Administrator",
  "module": "Course Syllabus Builder",
  "name": "Course Syllabus",
@@ -145,6 +155,43 @@
    "report": 1,
    "role": "System Manager",
    "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Faculty",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Department Chair",
+   "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "College Dean",
    "share": 1,
    "write": 1
   }

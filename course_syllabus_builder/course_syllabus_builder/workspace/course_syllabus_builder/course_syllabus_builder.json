@@ -39,7 +39,7 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Course Syllabus App",
+   "label": "Course Syllabus",
    "link_to": "Course Syllabus",
    "link_type": "DocType",
    "onboard": 0,
@@ -92,7 +92,7 @@
    "type": "Link"
   }
  ],
- "modified": "2022-03-23 22:47:57.153665",
+ "modified": "2022-03-27 22:33:57.989474",
  "modified_by": "Administrator",
  "module": "Course Syllabus Builder",
  "name": "Course Syllabus Builder",
@@ -106,6 +106,7 @@
    "icon": "active",
    "label": "Course Syllabus",
    "link_to": "Course Syllabus",
+   "stats_filter": "",
    "type": "DocType"
   },
   {

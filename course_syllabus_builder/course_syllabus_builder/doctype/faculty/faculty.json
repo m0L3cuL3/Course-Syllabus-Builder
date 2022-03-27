@@ -168,7 +168,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-03-19 15:02:40.841278",
+ "modified": "2022-03-27 20:18:01.397935",
  "modified_by": "Administrator",
  "module": "Course Syllabus Builder",
  "name": "Faculty",
@@ -184,6 +184,30 @@
    "report": 1,
    "role": "System Manager",
    "select": 1,
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Department Chair",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Faculty",
    "share": 1,
    "write": 1
   }
