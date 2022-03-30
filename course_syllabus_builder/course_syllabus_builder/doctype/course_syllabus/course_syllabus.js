@@ -21,16 +21,14 @@ frappe.ui.form.on('Course Syllabus', {
 				
 				//frm.set_df_property('college_department', 'options', dept)
 				frm.fields_dict.plo_table.grid.update_docfield_property(
-					"college_department",
+					"plo_department",
 					"options",
 					dept
 				)
-				refresh_field("college_department")
+				refresh_field("plo_table")
 		
 			})
 		}
-
-		frm.change_custom_button_type('Closed', 'Set Status', 'danger');
 		
 	}
 })
@@ -57,12 +55,12 @@ frappe.ui.form.on('Course Syllabus', {
 				
 				//frm.set_df_property('college_department', 'options', dept)
 				frm.fields_dict.plo_table.grid.update_docfield_property(
-					"college_department",
+					"plo_department",
 					"options",
 					dept
 				)
 
-				refresh_field("college_department")
+				refresh_field("plo_table")
 		
 			})
 	   }
@@ -110,6 +108,7 @@ frappe.ui.form.on('Course Syllabus', {
 		frm.add_fetch('course_main', 'course_code','course_code')
 		frm.add_fetch('course_main', 'college_name','college_name')
 		frm.add_fetch('course_main', 'college_department','college_department')
+		frm.add_fetch('course_main', 'course_description', 'course_description')
 	}
 });
 

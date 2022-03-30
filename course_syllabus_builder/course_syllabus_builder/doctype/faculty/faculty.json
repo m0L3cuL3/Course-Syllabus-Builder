@@ -13,6 +13,7 @@
   "middle_initial",
   "last_name",
   "assigned_college",
+  "assigned_department",
   "column_break_6",
   "email_address",
   "phone_number",
@@ -106,26 +107,22 @@
   {
    "fieldname": "administrative_start_time",
    "fieldtype": "Data",
-   "label": "Administrative Start Time",
-   "reqd": 1
+   "label": "Administrative Start Time"
   },
   {
    "fieldname": "administrative_end_time",
    "fieldtype": "Data",
-   "label": "Administrative End Time",
-   "reqd": 1
+   "label": "Administrative End Time"
   },
   {
    "fieldname": "academic_start_time",
    "fieldtype": "Data",
-   "label": "Academic Start Time",
-   "reqd": 1
+   "label": "Academic Start Time"
   },
   {
    "fieldname": "academic_end_time",
    "fieldtype": "Data",
-   "label": "Academic End Time",
-   "reqd": 1
+   "label": "Academic End Time"
   },
   {
    "fieldname": "column_break_16",
@@ -145,14 +142,12 @@
   {
    "fieldname": "administrative_days",
    "fieldtype": "Data",
-   "label": "Administrative Days",
-   "reqd": 1
+   "label": "Administrative Days"
   },
   {
    "fieldname": "academic_days",
    "fieldtype": "Data",
-   "label": "Academic Days",
-   "reqd": 1
+   "label": "Academic Days"
   },
   {
    "fieldname": "info_html_5",
@@ -164,11 +159,16 @@
    "fieldname": "info_html_4",
    "fieldtype": "HTML",
    "options": "<br>\n<p class=\"alert alert-info\">You have to input the <strong>ACADEMIC TIME</strong> manually in the textbox.</p>\n\n<p class=\"alert alert-success\"><strong>EXAMPLE:</strong> 1:30 PM</p>"
+  },
+  {
+   "fieldname": "assigned_department",
+   "fieldtype": "Select",
+   "label": "Department"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-03-27 20:18:01.397935",
+ "modified": "2022-03-30 17:30:35.393620",
  "modified_by": "Administrator",
  "module": "Course Syllabus Builder",
  "name": "Faculty",
@@ -208,6 +208,18 @@
    "read": 1,
    "report": 1,
    "role": "Faculty",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "College Dean",
    "share": 1,
    "write": 1
   }

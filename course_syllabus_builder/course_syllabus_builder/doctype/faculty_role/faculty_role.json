@@ -27,15 +27,16 @@
   },
   {
    "fieldname": "title",
-   "fieldtype": "Data",
+   "fieldtype": "Select",
    "in_list_view": 1,
-   "label": "Title"
+   "label": "Title",
+   "options": "Faculty\nChair\nDean"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2022-03-21 21:31:36.663601",
+ "modified": "2022-03-29 15:29:04.394783",
  "modified_by": "Administrator",
  "module": "Course Syllabus Builder",
  "name": "Faculty Role",

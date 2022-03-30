@@ -23,6 +23,9 @@
   "college_name",
   "college_department",
   "course_schedule",
+  "rationale",
+  "course_description",
+  "clo_table",
   "amended_from"
  ],
  "fields": [
@@ -66,7 +69,7 @@
    "fieldname": "course_syllabus_builder",
    "fieldtype": "HTML",
    "label": "Course Syllabus Builder",
-   "options": "<p class=\"alert alert-info\">Please insert necessary information.</p>",
+   "options": "<div class=\"alert alert-primary\" role=\"alert\">\nStatus: <strong>{{ doc.workflow_state }}</strong>\n</div>",
    "read_only": 1
   },
   {
@@ -135,11 +138,29 @@
    "options": "Course Syllabus",
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "fieldname": "rationale",
+   "fieldtype": "Long Text",
+   "label": "Rationale"
+  },
+  {
+   "fieldname": "course_description",
+   "fieldtype": "Long Text",
+   "label": "Course Description",
+   "options": "course.course_description",
+   "read_only": 1
+  },
+  {
+   "fieldname": "clo_table",
+   "fieldtype": "Table",
+   "label": "Terminal Competencies/Course Learning Outcomes",
+   "options": "Course Learning Outcomes"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-03-27 22:21:16.956325",
+ "modified": "2022-03-30 23:44:32.022164",
  "modified_by": "Administrator",
  "module": "Course Syllabus Builder",
  "name": "Course Syllabus",
@@ -184,7 +205,6 @@
    "write": 1
   },
   {
-   "create": 1,
    "delete": 1,
    "email": 1,
    "export": 1,
@@ -192,8 +212,8 @@
    "read": 1,
    "report": 1,
    "role": "College Dean",
-   "share": 1,
-   "write": 1
+   "select": 1,
+   "share": 1
   }
  ],
  "sort_field": "modified",

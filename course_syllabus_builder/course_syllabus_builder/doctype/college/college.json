@@ -18,7 +18,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-03-27 20:16:17.434286",
+ "modified": "2022-03-30 17:29:42.679516",
  "modified_by": "Administrator",
  "module": "Course Syllabus Builder",
  "name": "College",
@@ -55,6 +55,18 @@
    "read": 1,
    "report": 1,
    "role": "Department Chair",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "College Dean",
    "share": 1,
    "write": 1
   }

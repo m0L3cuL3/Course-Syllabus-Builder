@@ -12,7 +12,8 @@
   "college_name",
   "college_department",
   "ins_html",
-  "schedule"
+  "schedule",
+  "course_description"
  ],
  "fields": [
   {
@@ -58,11 +59,16 @@
    "fieldname": "ins_html",
    "fieldtype": "HTML",
    "options": "<p class=\"alert alert-success\">\n<strong>SCHEDULE EXAMPLES:</strong><br><br>\n<strong>Section:</strong> CC20 A<br><br>\n<strong>Day/Time:</strong> MTh 10:30am-1:30pm <br><br>\n<strong>Room:</strong> FH 205\n</p>"
+  },
+  {
+   "fieldname": "course_description",
+   "fieldtype": "Long Text",
+   "label": "Course Description"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-03-27 20:17:01.543752",
+ "modified": "2022-03-30 17:29:56.407490",
  "modified_by": "Administrator",
  "module": "Course Syllabus Builder",
  "name": "Course",
@@ -102,6 +108,18 @@
    "read": 1,
    "report": 1,
    "role": "Department Chair",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "College Dean",
    "share": 1,
    "write": 1
   }

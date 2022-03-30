@@ -1,0 +1,51 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-03-30 23:42:07.832247",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "course_learning_outcomes_code",
+  "course_learning_outcomes",
+  "department",
+  "program_learning_outcomes_code"
+ ],
+ "fields": [
+  {
+   "fieldname": "course_learning_outcomes_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Course Learning Outcomes Code"
+  },
+  {
+   "fieldname": "course_learning_outcomes",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Course Learning Outcomes"
+  },
+  {
+   "fieldname": "program_learning_outcomes_code",
+   "fieldtype": "Long Text",
+   "in_list_view": 1,
+   "label": "Program Learning Outcomes Code"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Department"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-03-30 23:47:00.167244",
+ "modified_by": "Administrator",
+ "module": "Course Syllabus Builder",
+ "name": "Course Learning Outcomes",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
