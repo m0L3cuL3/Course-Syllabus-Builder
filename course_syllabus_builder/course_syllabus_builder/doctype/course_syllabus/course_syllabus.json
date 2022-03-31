@@ -26,6 +26,16 @@
   "rationale",
   "course_description",
   "clo_table",
+  "course_requirements",
+  "grading_system",
+  "gdlg_button",
+  "letter_grade_table",
+  "textbook_table",
+  "reference_table",
+  "equipment_table",
+  "weekly_schedule_section",
+  "weekly_schedule",
+  "summary_task_table",
   "amended_from"
  ],
  "fields": [
@@ -156,11 +166,69 @@
    "fieldtype": "Table",
    "label": "Terminal Competencies/Course Learning Outcomes",
    "options": "Course Learning Outcomes"
+  },
+  {
+   "fieldname": "course_requirements",
+   "fieldtype": "Table",
+   "label": "Course Requirements",
+   "options": "Course Requirements"
+  },
+  {
+   "fieldname": "gdlg_button",
+   "fieldtype": "Button",
+   "label": "Get Default Letter Grades"
+  },
+  {
+   "fieldname": "letter_grade_table",
+   "fieldtype": "Table",
+   "label": "Letter Grade Equivalency",
+   "options": "Letter Grade Table"
+  },
+  {
+   "fieldname": "grading_system",
+   "fieldtype": "Table",
+   "label": "Grading System",
+   "options": "Grading System Table"
+  },
+  {
+   "fieldname": "textbook_table",
+   "fieldtype": "Table",
+   "label": "Official Textbook",
+   "options": "Textbook Table"
+  },
+  {
+   "fieldname": "reference_table",
+   "fieldtype": "Table",
+   "label": "Other References and Reading Materials",
+   "options": "Reference Material Table"
+  },
+  {
+   "fieldname": "equipment_table",
+   "fieldtype": "Table",
+   "label": "Materials and Equipment",
+   "options": "Equipment Materials Table"
+  },
+  {
+   "fieldname": "weekly_schedule_section",
+   "fieldtype": "Section Break",
+   "label": "Weekly Schedule"
+  },
+  {
+   "fieldname": "weekly_schedule",
+   "fieldtype": "Table",
+   "label": "Weekly Schedule",
+   "options": "Weekly Schedule Table"
+  },
+  {
+   "fieldname": "summary_task_table",
+   "fieldtype": "Table",
+   "label": " Summary of Assessment Tasks",
+   "options": "Summary of Assessment Tasks Table"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-03-30 23:44:32.022164",
+ "modified": "2022-04-01 02:41:10.091340",
  "modified_by": "Administrator",
  "module": "Course Syllabus Builder",
  "name": "Course Syllabus",

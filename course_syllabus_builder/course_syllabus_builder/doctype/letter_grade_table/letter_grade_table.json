@@ -1,44 +1,42 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2022-03-22 15:52:16.909909",
+ "creation": "2022-04-01 00:00:46.915941",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "section",
-  "day_time",
-  "room"
+  "min_percent",
+  "max_percent",
+  "letter_grade"
  ],
  "fields": [
   {
-   "fieldname": "section",
+   "fieldname": "letter_grade",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Section",
-   "reqd": 1
+   "label": "Letter Grade",
+   "read_only": 1
   },
   {
-   "fieldname": "day_time",
-   "fieldtype": "Data",
+   "fieldname": "min_percent",
+   "fieldtype": "Percent",
    "in_list_view": 1,
-   "label": "Day/Time",
-   "reqd": 1
+   "label": "Minimum Percentage"
   },
   {
-   "fieldname": "room",
-   "fieldtype": "Data",
+   "fieldname": "max_percent",
+   "fieldtype": "Percent",
    "in_list_view": 1,
-   "label": "Room",
-   "reqd": 1
+   "label": "Maximum Percentage"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2022-04-01 02:18:13.225100",
+ "modified": "2022-04-01 02:17:45.461378",
  "modified_by": "Administrator",
  "module": "Course Syllabus Builder",
- "name": "Course Schedule",
+ "name": "Letter Grade Table",
  "owner": "Administrator",
  "permissions": [],
  "sort_field": "modified",

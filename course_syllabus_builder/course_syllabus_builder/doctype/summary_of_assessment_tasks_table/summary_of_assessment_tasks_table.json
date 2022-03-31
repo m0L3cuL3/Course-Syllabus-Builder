@@ -1,0 +1,50 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-04-01 02:39:47.750136",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "task_description",
+  "final_grade_percent",
+  "deadline_schedule",
+  "instructions"
+ ],
+ "fields": [
+  {
+   "fieldname": "task_description",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Task Description"
+  },
+  {
+   "fieldname": "final_grade_percent",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Percentage Equivalent for Final Grade"
+  },
+  {
+   "fieldname": "deadline_schedule",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Deadline/Schedule"
+  },
+  {
+   "fieldname": "instructions",
+   "fieldtype": "Long Text",
+   "in_list_view": 1,
+   "label": "Instructions"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-04-01 02:39:47.750136",
+ "modified_by": "Administrator",
+ "module": "Course Syllabus Builder",
+ "name": "Summary of Assessment Tasks Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

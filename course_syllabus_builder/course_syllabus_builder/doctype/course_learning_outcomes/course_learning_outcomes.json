@@ -3,7 +3,6 @@
  "allow_rename": 1,
  "creation": "2022-03-30 23:42:07.832247",
  "doctype": "DocType",
- "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "course_learning_outcomes_code",
@@ -40,7 +39,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2022-03-30 23:47:00.167244",
+ "modified": "2022-04-01 02:17:52.871673",
  "modified_by": "Administrator",
  "module": "Course Syllabus Builder",
  "name": "Course Learning Outcomes",

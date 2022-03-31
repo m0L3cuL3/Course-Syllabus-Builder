@@ -25,6 +25,14 @@ frappe.ui.form.on('Course Syllabus', {
 					"options",
 					dept
 				)
+
+				frm.fields_dict.clo_table.grid.update_docfield_property(
+					"department",
+					"options",
+					dept
+				)
+
+				refresh_field("clo_table")
 				refresh_field("plo_table")
 		
 			})
@@ -60,6 +68,13 @@ frappe.ui.form.on('Course Syllabus', {
 					dept
 				)
 
+				frm.fields_dict.clo_table.grid.update_docfield_property(
+					"department",
+					"options",
+					dept
+				)
+
+				refresh_field("clo_table")
 				refresh_field("plo_table")
 		
 			})
@@ -125,20 +140,60 @@ frappe.ui.form.on('Course Syllabus', {
 	}
 });
 
+// get letter grade.
+frappe.ui.form.on('Course Syllabus', {
+	gdlg_button: function(frm){
+
+		// 92-100 A Excellent
+		// 84-91.99 A- Very Good
+		// 76-83.99 B Good
+		// 68-75.99 B- Fair
+		// 60-67.99 C Satisfactory
+		// 50-59.99 D Passed
+		// 49.99 and below F Failed
+
+		let min_percent = [92,84,76,68,60,50,49.99]
+		let max_percent = [100,91.99,83.99,75.99,67.99,59.99,48.99]
+		let letter_grade = ['A','A-','B','B-','C','D','F']
+
+		console.log(min_percent[0])
+		console.log(max_percent[0])
+		console.log(letter_grade[0])
+
+		for(let i=0; i<min_percent.length; i++){
+			let entry = frm.add_child('letter_grade_table')
+			entry.min_percent = min_percent[i]
+			entry.max_percent = max_percent[i]
+			entry.letter_grade = letter_grade[i]
+		}
+		
+		frm.get_field("letter_grade_table").grid.only_sortable();
+		refresh_field('letter_grade_table')
+	}
+});
+
+frappe.ui.form.on('Course Syllabus', {
+	refresh: function(frm){
+
+		frm.get_field("letter_grade_table").grid.only_sortable();
+		refresh_field('letter_grade_table')
+		set_css(frm)
+	}
+
+});
 
 
+var set_css = function (frm) {
+	document.querySelectorAll("[data-fieldname=gdlg_button]")[1].style.color ='white';
+	document.querySelectorAll("[data-fieldname=gdlg_button]")[1].style.backgroundColor ='green';
+	document.querySelectorAll("[data-fieldname=gdlg_button]")[1].style.height = "30px";
+	document.querySelectorAll("[data-fieldname=gdlg_button]")[1].style.width = "320px";
 
-// var set_css = function (frm) {
-// 	document.querySelectorAll("[data-fieldname=add_dept]")[1].style.color ='white';
-// 	document.querySelectorAll("[data-fieldname=add_dept]")[1].style.backgroundColor ='green';
-// 	document.querySelectorAll("[data-fieldname=add_dept]")[1].style.height = "30px";
-// 	document.querySelectorAll("[data-fieldname=add_dept]")[1].style.width = "320px";
-
-// 	document.querySelectorAll("[data-fieldname=delete_dept]")[1].style.color ='white';
-// 	document.querySelectorAll("[data-fieldname=delete_dept]")[1].style.backgroundColor ='red';
-// 	document.querySelectorAll("[data-fieldname=delete_dept]")[1].style.height = "30px";
-// 	document.querySelectorAll("[data-fieldname=delete_dept]")[1].style.width = "320px";
-// }
+	// document.querySelectorAll("[data-fieldname=delete_dept]")[1].style.color ='white';
+	// document.querySelectorAll("[data-fieldname=delete_dept]")[1].style.backgroundColor ='red';
+	// document.querySelectorAll("[data-fieldname=delete_dept]")[1].style.height = "30px";
+	// document.querySelectorAll("[data-fieldname=delete_dept]")[1].style.width = "320px";
+}
 
 
 

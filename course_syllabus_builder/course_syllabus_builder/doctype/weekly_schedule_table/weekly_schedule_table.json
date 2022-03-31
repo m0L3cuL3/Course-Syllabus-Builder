@@ -1,0 +1,86 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-04-01 02:08:11.519616",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "module_number",
+  "module_title",
+  "learning_outcomes",
+  "topic_outline",
+  "teaching_learning_activities",
+  "time_frame",
+  "assessment_task",
+  "scoring_tool"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "module_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Module Number"
+  },
+  {
+   "columns": 2,
+   "fieldname": "module_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Module Title"
+  },
+  {
+   "columns": 1,
+   "fieldname": "learning_outcomes",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Learning Outcomes"
+  },
+  {
+   "columns": 1,
+   "fieldname": "topic_outline",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Topic Outline"
+  },
+  {
+   "columns": 1,
+   "fieldname": "teaching_learning_activities",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Teaching Learning Activities"
+  },
+  {
+   "columns": 1,
+   "fieldname": "time_frame",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Time Frame"
+  },
+  {
+   "columns": 1,
+   "fieldname": "assessment_task",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Assessment Task"
+  },
+  {
+   "columns": 1,
+   "fieldname": "scoring_tool",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Scoring Tool"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-04-01 02:16:05.886296",
+ "modified_by": "Administrator",
+ "module": "Course Syllabus Builder",
+ "name": "Weekly Schedule Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

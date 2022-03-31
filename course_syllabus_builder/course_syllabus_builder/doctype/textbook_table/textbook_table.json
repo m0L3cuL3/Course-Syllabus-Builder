@@ -1,0 +1,29 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-04-01 01:49:14.267691",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "textbook"
+ ],
+ "fields": [
+  {
+   "fieldname": "textbook",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Textbook"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-04-01 02:17:21.732610",
+ "modified_by": "Administrator",
+ "module": "Course Syllabus Builder",
+ "name": "Textbook Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

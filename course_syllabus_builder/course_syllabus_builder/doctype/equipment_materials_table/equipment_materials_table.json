@@ -1,0 +1,29 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-04-01 01:56:22.804235",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "equipment"
+ ],
+ "fields": [
+  {
+   "fieldname": "equipment",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Materials/Equipment"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-04-01 02:17:06.719829",
+ "modified_by": "Administrator",
+ "module": "Course Syllabus Builder",
+ "name": "Equipment Materials Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
