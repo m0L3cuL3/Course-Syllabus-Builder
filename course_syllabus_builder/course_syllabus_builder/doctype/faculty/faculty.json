@@ -19,17 +19,7 @@
   "phone_number",
   "phone_local_number",
   "consultation_hours_section",
-  "info_html_1",
-  "administrative_days",
-  "info_html_2",
-  "administrative_start_time",
-  "administrative_end_time",
-  "column_break_16",
-  "info_html_5",
-  "academic_days",
-  "info_html_4",
-  "academic_start_time",
-  "academic_end_time"
+  "consultation_table"
  ],
  "fields": [
   {
@@ -80,13 +70,13 @@
   },
   {
    "fieldname": "phone_number",
-   "fieldtype": "Int",
+   "fieldtype": "Data",
    "label": "Phone",
    "reqd": 1
   },
   {
    "fieldname": "phone_local_number",
-   "fieldtype": "Int",
+   "fieldtype": "Data",
    "label": "Phone (local)",
    "reqd": 1
   },
@@ -105,70 +95,20 @@
    "reqd": 1
   },
   {
-   "fieldname": "administrative_start_time",
-   "fieldtype": "Data",
-   "label": "Administrative Start Time"
-  },
-  {
-   "fieldname": "administrative_end_time",
-   "fieldtype": "Data",
-   "label": "Administrative End Time"
-  },
-  {
-   "fieldname": "academic_start_time",
-   "fieldtype": "Data",
-   "label": "Academic Start Time"
-  },
-  {
-   "fieldname": "academic_end_time",
-   "fieldtype": "Data",
-   "label": "Academic End Time"
-  },
-  {
-   "fieldname": "column_break_16",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "info_html_1",
-   "fieldtype": "HTML",
-   "label": "AdDays",
-   "options": "<p class=\"alert alert-info\">You have to input the <strong>ADMINISTRATIVE DAYS</strong> manually in the textbox.</p>\n\n<p class=\"alert alert-success\">\n<strong>EXAMPLE 1:</strong> Mon,Wed,Fri\n<br>\n<strong>EXAMPLE 2:</strong> Monday,Wednesday,Friday\n</p>"
-  },
-  {
-   "fieldname": "info_html_2",
-   "fieldtype": "HTML",
-   "options": "<br>\n<p class=\"alert alert-info\">You have to input the <strong>ADMINISTRATIVE TIME</strong> manually in the textbox.</p>\n\n<p class=\"alert alert-success\"><strong>EXAMPLE:</strong> 1:30 PM</p>"
-  },
-  {
-   "fieldname": "administrative_days",
-   "fieldtype": "Data",
-   "label": "Administrative Days"
-  },
-  {
-   "fieldname": "academic_days",
-   "fieldtype": "Data",
-   "label": "Academic Days"
-  },
-  {
-   "fieldname": "info_html_5",
-   "fieldtype": "HTML",
-   "label": "AcDays",
-   "options": "<p class=\"alert alert-info\">You have to input the <strong>ACADEMIC DAYS</strong> manually in the textbox.</p>\n\n<p class=\"alert alert-success\">\n<strong>EXAMPLE 1:</strong> Mon,Wed,Fri\n<br>\n<strong>EXAMPLE 2:</strong> Monday,Wednesday,Friday\n</p>"
-  },
-  {
-   "fieldname": "info_html_4",
-   "fieldtype": "HTML",
-   "options": "<br>\n<p class=\"alert alert-info\">You have to input the <strong>ACADEMIC TIME</strong> manually in the textbox.</p>\n\n<p class=\"alert alert-success\"><strong>EXAMPLE:</strong> 1:30 PM</p>"
-  },
-  {
    "fieldname": "assigned_department",
    "fieldtype": "Select",
    "label": "Department"
+  },
+  {
+   "fieldname": "consultation_table",
+   "fieldtype": "Table",
+   "label": "Consulation Hours",
+   "options": "Consultation Hours Table"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-03-30 17:30:35.393620",
+ "modified": "2022-04-02 12:41:30.134499",
  "modified_by": "Administrator",
  "module": "Course Syllabus Builder",
  "name": "Faculty",

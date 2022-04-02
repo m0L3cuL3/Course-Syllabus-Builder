@@ -3,6 +3,7 @@
  "allow_rename": 1,
  "creation": "2022-03-19 15:13:30.565797",
  "doctype": "DocType",
+ "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "faculty",
@@ -35,7 +36,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2022-04-01 02:17:59.280729",
+ "modified": "2022-04-02 12:54:17.839938",
  "modified_by": "Administrator",
  "module": "Course Syllabus Builder",
  "name": "Faculty Role",

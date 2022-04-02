@@ -23,6 +23,8 @@
   "college_name",
   "college_department",
   "course_schedule",
+  "placement",
+  "pre_requisites",
   "rationale",
   "course_description",
   "clo_table",
@@ -224,11 +226,21 @@
    "fieldtype": "Table",
    "label": " Summary of Assessment Tasks",
    "options": "Summary of Assessment Tasks Table"
+  },
+  {
+   "fieldname": "placement",
+   "fieldtype": "Data",
+   "label": "Placement"
+  },
+  {
+   "fieldname": "pre_requisites",
+   "fieldtype": "Data",
+   "label": "Pre-Requisites"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-04-01 02:41:10.091340",
+ "modified": "2022-04-02 18:33:47.969235",
  "modified_by": "Administrator",
  "module": "Course Syllabus Builder",
  "name": "Course Syllabus",
