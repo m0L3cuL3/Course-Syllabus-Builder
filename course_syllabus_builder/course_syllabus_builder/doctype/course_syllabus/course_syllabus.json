@@ -25,6 +25,7 @@
   "course_schedule",
   "placement",
   "pre_requisites",
+  "assigned_faculty",
   "rationale",
   "course_description",
   "clo_table",
@@ -236,11 +237,17 @@
    "fieldname": "pre_requisites",
    "fieldtype": "Data",
    "label": "Pre-Requisites"
+  },
+  {
+   "fieldname": "assigned_faculty",
+   "fieldtype": "Table MultiSelect",
+   "label": "Assigned Faculty",
+   "options": "Assigned Faculty"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-04-02 18:33:47.969235",
+ "modified": "2022-04-04 18:41:08.513039",
  "modified_by": "Administrator",
  "module": "Course Syllabus Builder",
  "name": "Course Syllabus",

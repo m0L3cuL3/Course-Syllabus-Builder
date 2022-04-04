@@ -196,4 +196,13 @@ var set_css = function (frm) {
 }
 
 
+// custom print buttons
+// frappe.ui.form.on('Course Syllabus', {
+// 	refresh: function (frm) {
+// 		frm.add_custom_button('Preview', () => {
+// 			frm.print_doc(frm.doc.ccs_format);
+// 		});
+// 	}
+// });
+
 
