@@ -155,6 +155,7 @@ frappe.ui.form.on('Course Syllabus', {
 		let min_percent = [92,84,76,68,60,50,49.99]
 		let max_percent = [100,91.99,83.99,75.99,67.99,59.99,48.99]
 		let letter_grade = ['A','A-','B','B-','C','D','F']
+		let word_grade = ['Excellent', 'Very Good', 'Good', 'Fair', 'Satisfactory', 'Passed', 'Failed']
 
 		console.log(min_percent[0])
 		console.log(max_percent[0])
@@ -165,6 +166,7 @@ frappe.ui.form.on('Course Syllabus', {
 			entry.min_percent = min_percent[i]
 			entry.max_percent = max_percent[i]
 			entry.letter_grade = letter_grade[i]
+			entry.word_grade = word_grade[i]
 		}
 		
 		frm.get_field("letter_grade_table").grid.only_sortable();
