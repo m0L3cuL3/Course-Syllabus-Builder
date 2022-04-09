@@ -10,6 +10,8 @@
   "course_syllabus_builder",
   "general_section",
   "course_main",
+  "school_year",
+  "semester",
   "faculty_section",
   "info_html_2",
   "faculty_roles",
@@ -17,7 +19,6 @@
   "html_19",
   "plo_table",
   "college_course_section",
-  "college_html",
   "course_code",
   "course_title",
   "college_name",
@@ -28,6 +29,7 @@
   "assigned_faculty",
   "rationale",
   "course_description",
+  "html_23",
   "clo_table",
   "course_requirements",
   "grading_system",
@@ -37,6 +39,7 @@
   "reference_table",
   "equipment_table",
   "weekly_schedule_section",
+  "html_33",
   "weekly_schedule",
   "summary_task_table",
   "amended_from"
@@ -94,7 +97,7 @@
    "fieldname": "info_html_2",
    "fieldtype": "HTML",
    "label": "info2",
-   "options": "<p class=\"alert alert-info\">\nPlease select a <strong>FACULTY</strong>. If you don't see any listed faculty, please create a new faculty.\n</p>"
+   "options": "<p class=\"alert alert-info\">\nPlease select a <strong>FACULTY</strong>. If you don't see any listed faculty, please create a new faculty.\n</p>\n\n<p class=\"alert alert-success\">\nWhen selecting <strong>POSITION</strong> and <strong>TITLE</strong> only select one for each faculty. In addition, you can only add three (3) faculty. Adding beyond three (3) causes errors in printing.\n</p>\n\n<p class=\"alert alert-warning\">\n<strong>POSITION</strong> sequence: <br><br>\nPrepared By <br>\nReviewed By <br>\nApproved By <br>\n</p>\n\n<p class=\"alert alert-warning\">\n<strong>TITLE</strong> sequence: <br><br>\nFaculty <br>\nChair <br>\nDean <br>\n</p>"
   },
   {
    "fieldname": "plo_section",
@@ -104,7 +107,7 @@
   {
    "fieldname": "html_19",
    "fieldtype": "HTML",
-   "options": "<p class=\"alert alert-info\">\nYou can click the <strong>EDIT</strong> button on the right of the table to access a more open GUI. (add row first)\n</p>\n\n<p class=\"alert alert-success\">\n<strong>EXAMPLES:</strong><br><br>\n<strong>Graduate Attribute:</strong> Knowledge for Solving\nComputing Problems<br><br>\n<strong>Program Learning Outcomes Code:</strong> CS01<br><br>\n<strong>Program Learning Outcomes:</strong> Apply knowledge of computing fundamentals, knowledge of a computing specialization, and mathematics,\nscience, and domain knowledge appropriate for the computing specialization to the abstraction and\nconceptualization of computing models from defined problems and requirements.<br><br>\n<strong>PEO/ILO Mapping:</strong> AE, GC\n</p>"
+   "options": "<p class=\"alert alert-info\">\n<strong>DEPARTMENT</strong> serves as a separator for the print format. If that Program Learning Outcome belongs in that department, please assigned the department.\n</p>\n\n<p class=\"alert alert-success\">\n<strong>EXAMPLES:</strong><br><br>\n<strong>Graduate Attribute:</strong> Knowledge for Solving\nComputing Problems<br><br>\n<strong>Program Learning Outcomes Code:</strong> CS01<br><br>\n<strong>Program Learning Outcomes:</strong> Apply knowledge of computing fundamentals, knowledge of a computing specialization, and mathematics,\nscience, and domain knowledge appropriate for the computing specialization to the abstraction and\nconceptualization of computing models from defined problems and requirements.<br><br>\n<strong>PEO/ILO Mapping:</strong> AE, GC\n</p>"
   },
   {
    "fieldname": "faculty_roles",
@@ -124,11 +127,6 @@
    "fieldtype": "Table",
    "label": "PLO Table",
    "options": "Program Learning Outcomes"
-  },
-  {
-   "fieldname": "college_html",
-   "fieldtype": "HTML",
-   "options": "\n"
   },
   {
    "fetch_from": "course.schedule",
@@ -243,11 +241,35 @@
    "fieldtype": "Table MultiSelect",
    "label": "Assigned Faculty",
    "options": "Assigned Faculty"
+  },
+  {
+   "fieldname": "semester",
+   "fieldtype": "Select",
+   "label": "Semester",
+   "options": "\n1st Semester\n2nd Semester\nSummer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "school_year",
+   "fieldtype": "Link",
+   "label": "School Year",
+   "options": "School Year",
+   "reqd": 1
+  },
+  {
+   "fieldname": "html_23",
+   "fieldtype": "HTML",
+   "options": "<p class=\"alert alert-info\">\n<strong>COURSE LEARNING OUTCOMES CODE</strong> serves as a separator for the print format. If that Course Learning Outcome belongs in that CLO code, please assigned the CLO code.\n</p>"
+  },
+  {
+   "fieldname": "html_33",
+   "fieldtype": "HTML",
+   "options": "<p class=\"alert alert-info\">\n<strong>MODULE NUMBER</strong> serves as a separator for the print format. If that schedule belongs in that module, please assigned the module number.\n</p>"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-04-04 18:41:08.513039",
+ "modified": "2022-04-08 14:59:59.691061",
  "modified_by": "Administrator",
  "module": "Course Syllabus Builder",
  "name": "Course Syllabus",

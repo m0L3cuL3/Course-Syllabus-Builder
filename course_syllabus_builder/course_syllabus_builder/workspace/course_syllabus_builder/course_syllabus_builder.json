@@ -75,11 +75,13 @@
   },
   {
    "hidden": 0,
+   "icon": "customization",
    "is_query_report": 0,
    "label": "Others",
    "link_to": "",
    "link_type": "DocType",
    "onboard": 0,
+   "only_for": "",
    "type": "Card Break"
   },
   {
@@ -90,9 +92,18 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "School Year",
+   "link_to": "School Year",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2022-03-27 22:33:57.989474",
+ "modified": "2022-04-09 20:07:15.617662",
  "modified_by": "Administrator",
  "module": "Course Syllabus Builder",
  "name": "Course Syllabus Builder",

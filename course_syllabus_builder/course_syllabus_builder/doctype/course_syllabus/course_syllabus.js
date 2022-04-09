@@ -161,6 +161,8 @@ frappe.ui.form.on('Course Syllabus', {
 		console.log(max_percent[0])
 		console.log(letter_grade[0])
 
+		frm.clear_table('letter_grade_table')
+
 		for(let i=0; i<min_percent.length; i++){
 			let entry = frm.add_child('letter_grade_table')
 			entry.min_percent = min_percent[i]
