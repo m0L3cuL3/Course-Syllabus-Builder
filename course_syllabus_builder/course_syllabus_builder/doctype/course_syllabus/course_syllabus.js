@@ -186,6 +186,52 @@ frappe.ui.form.on('Course Syllabus', {
 
 });
 
+// Get Graduate Attribute by Department
+// frappe.ui.form.on('Course Syllabus', {
+// 	refresh: function(frm) {
+// 		let college = frm.doc.college_name;
+// 		// let mytable = frm.doc.plo_table;
+// 		// let department = mytable.plo_department;
+		  
+// 		if(college){
+// 			frappe.call({
+// 				method: "course_syllabus_builder.course_syllabus_builder.doctype.department_learning_outcomes.department_learning_outcomes.get_graduate_attribute_by_department",
+// 				args: {
+// 					college: college
+// 				}
+// 			}).done((r) => {
+// 				console.log('Graduate Attribute Test!')
+// 				console.log(r.message)
+
+// 				let grad_attr = []
+			
+// 				$.each(r.message, function(_i, e){
+// 					console.log(e)
+// 					grad_attr[_i] = e.graduate_attribute
+// 				})
+				
+// 				//frm.set_df_property('college_department', 'options', dept)
+// 				frm.fields_dict.plo_table.grid.update_docfield_property(
+// 					"graduate_attribute",
+// 					"options",
+// 					grad_attr
+// 				)
+
+// 				// frm.fields_dict.clo_table.grid.update_docfield_property(
+// 				// 	"department",
+// 				// 	"options",
+// 				// 	dept
+// 				// )
+
+// 				// refresh_field("clo_table")
+// 				// refresh_field("plo_table")
+		
+// 			})
+// 		}
+		
+// 	}
+// })
+
 
 var set_css = function (frm) {
 	document.querySelectorAll("[data-fieldname=gdlg_button]")[1].style.color ='white';
