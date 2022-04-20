@@ -1,5 +1,5 @@
 {
- "cards_label": "App List",
+ "cards_label": "Application List",
  "category": "Modules",
  "charts": [],
  "charts_label": "",
@@ -41,6 +41,15 @@
    "is_query_report": 0,
    "label": "Course Syllabus",
    "link_to": "Course Syllabus",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Deleted Document",
+   "link_to": "Deleted Document",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -103,7 +112,7 @@
    "type": "Link"
   }
  ],
- "modified": "2022-04-09 20:07:15.617662",
+ "modified": "2022-04-21 00:08:21.309330",
  "modified_by": "Administrator",
  "module": "Course Syllabus Builder",
  "name": "Course Syllabus Builder",

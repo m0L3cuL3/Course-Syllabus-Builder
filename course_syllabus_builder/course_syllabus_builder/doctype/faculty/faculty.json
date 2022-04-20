@@ -108,7 +108,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-04-02 12:41:30.134499",
+ "modified": "2022-04-21 00:15:26.002784",
  "modified_by": "Administrator",
  "module": "Course Syllabus Builder",
  "name": "Faculty",
@@ -128,16 +128,13 @@
    "write": 1
   },
   {
-   "create": 1,
-   "delete": 1,
    "email": 1,
    "export": 1,
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "Department Chair",
-   "share": 1,
-   "write": 1
+   "role": "Faculty",
+   "share": 1
   },
   {
    "create": 1,
@@ -147,7 +144,7 @@
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "Faculty",
+   "role": "Department Chair",
    "share": 1,
    "write": 1
   },
