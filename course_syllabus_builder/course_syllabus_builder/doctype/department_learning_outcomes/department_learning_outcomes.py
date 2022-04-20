@@ -31,7 +31,11 @@ def get_graduate_attribute_by_department(college):
 		FROM
 		`tabGraduate Attribute Table`
 		WHERE
+<<<<<<< HEAD
 		parent = '{college}'
+=======
+		parent = '{}'
+>>>>>>> 57f264cad9c6d6424cd1b003322a42524d8acb58
 	""", as_dict=True)
 
 	return graduate_attribute

@@ -1,0 +1,70 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{dlo_college} - {dlo_department}",
+ "creation": "2022-04-17 16:51:30.680014",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "dlo_college",
+  "dlo_department",
+  "graduate_attribute",
+  "plo_codes",
+  "plo_descriptions"
+ ],
+ "fields": [
+  {
+   "fieldname": "dlo_college",
+   "fieldtype": "Link",
+   "label": "College",
+   "options": "College"
+  },
+  {
+   "fieldname": "graduate_attribute",
+   "fieldtype": "Table",
+   "label": "Graduate Attribute",
+   "options": "Graduate Attribute Table"
+  },
+  {
+   "fieldname": "plo_codes",
+   "fieldtype": "Table",
+   "label": "PLO Codes",
+   "options": "Department PLO Codes Table"
+  },
+  {
+   "fieldname": "plo_descriptions",
+   "fieldtype": "Table",
+   "label": "PLO Descriptions",
+   "options": "Department PLO Desc Table"
+  },
+  {
+   "fieldname": "dlo_department",
+   "fieldtype": "Select",
+   "label": "Department"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-04-17 16:52:34.056729",
+ "modified_by": "Administrator",
+ "module": "Course Syllabus Builder",
+ "name": "Department Learning Outcomes",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
