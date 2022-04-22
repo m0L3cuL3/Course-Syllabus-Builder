@@ -33,6 +33,7 @@
   {
    "fieldname": "peoilo_mapping",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "PEO/ILO Mapping"
   },
   {
@@ -45,7 +46,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2022-04-17 18:28:41.079389",
+ "modified": "2022-04-22 13:36:52.296356",
  "modified_by": "Administrator",
  "module": "Course Syllabus Builder",
  "name": "Program Learning Outcomes",

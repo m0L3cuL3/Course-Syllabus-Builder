@@ -112,7 +112,7 @@
    "type": "Link"
   }
  ],
- "modified": "2022-04-21 00:08:21.309330",
+ "modified": "2022-04-22 14:46:27.151453",
  "modified_by": "Administrator",
  "module": "Course Syllabus Builder",
  "name": "Course Syllabus Builder",
@@ -122,10 +122,13 @@
  "pin_to_top": 1,
  "shortcuts": [
   {
+   "color": "#5bc76c",
    "doc_view": "List",
+   "format": "",
    "icon": "active",
    "label": "Course Syllabus",
    "link_to": "Course Syllabus",
+   "restrict_to_domain": "",
    "stats_filter": "",
    "type": "DocType"
   },

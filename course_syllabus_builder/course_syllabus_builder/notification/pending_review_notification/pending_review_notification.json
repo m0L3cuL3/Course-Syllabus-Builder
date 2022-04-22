@@ -1,0 +1,30 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "condition": "doc.workflow_state==\"Pending Review\"",
+ "creation": "2022-04-22 14:06:16.382312",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Course Syllabus",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "{{ doc.name }} is pending for review.",
+ "modified": "2022-04-22 14:52:47.135426",
+ "modified_by": "Administrator",
+ "module": "Course Syllabus Builder",
+ "name": "Pending Review Notification",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "owner",
+   "receiver_by_role": "Department Chair"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "Pending Review",
+ "value_changed": "workflow_state"
+}
