@@ -7,7 +7,7 @@ frappe.ui.form.on('Course Syllabus', {
 		  
 		if(college){
 			frappe.call({
-				method: "course_syllabus_builder.course_syllabus_builder.doctype.course_syllabus.course_syllabus.get_college_departments",
+				method: "course_syllabus_builder.course_syllabus_builder.doctype.college_department.college_department.get_college_departments",
 				args: {college: college}
 			}).done((r) => {
 				console.log(r.message)
@@ -49,7 +49,7 @@ frappe.ui.form.on('Course Syllabus', {
 	  
 		if(college){
 			frappe.call({
-				method: "course_syllabus_builder.course_syllabus_builder.doctype.course_syllabus.course_syllabus.get_college_departments",
+				method: "course_syllabus_builder.course_syllabus_builder.doctype.college_department.college_department.get_college_departments",
 				args: {college: college}
 			}).done((r) => {
 				console.log(r.message)
@@ -90,7 +90,7 @@ frappe.ui.form.on("Course Syllabus", {
 	  
 		if(course_title){
 			frappe.call({
-				method: "course_syllabus_builder.course_syllabus_builder.doctype.course.course.get_course_schedule",
+				method: "course_syllabus_builder.course_syllabus_builder.doctype.course_schedule.course_schedule.get_course_schedule",
 				args: {course_title: course_title}
 			}).done((r) => {
 				console.log(r.message)

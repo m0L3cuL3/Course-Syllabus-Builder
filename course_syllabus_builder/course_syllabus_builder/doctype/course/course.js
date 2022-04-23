@@ -7,7 +7,7 @@ frappe.ui.form.on('Course', {
 		  
 			if(college){
 				frappe.call({
-					method: "course_syllabus_builder.course_syllabus_builder.doctype.course.course.get_college_departments",
+					method: "course_syllabus_builder.course_syllabus_builder.doctype.college_department.college_department.get_college_departments",
 					args: {college: college}
 				}).done((r) => {
 					console.log(r.message)
@@ -36,7 +36,7 @@ frappe.ui.form.on('Course', {
 		  
 			if(college){
 				frappe.call({
-					method: "course_syllabus_builder.course_syllabus_builder.doctype.course.course.get_college_departments",
+					method: "course_syllabus_builder.course_syllabus_builder.doctype.college_department.college_department.get_college_departments",
 					args: {college: college}
 				}).done((r) => {
 					console.log(r.message)
