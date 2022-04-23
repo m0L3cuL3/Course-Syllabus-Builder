@@ -24,7 +24,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-04-17 17:38:10.432948",
+ "modified": "2022-04-23 22:53:10.511379",
  "modified_by": "Administrator",
  "module": "Course Syllabus Builder",
  "name": "University College Goals",
@@ -43,6 +43,7 @@
    "write": 1
   }
  ],
+ "restrict_to_domain": "Course Syllabus Builder",
  "sort_field": "modified",
  "sort_order": "DESC"
 }

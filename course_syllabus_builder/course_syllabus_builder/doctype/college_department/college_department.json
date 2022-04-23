@@ -26,7 +26,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-04-23 22:33:21.521665",
+ "modified": "2022-04-23 22:52:11.137884",
  "modified_by": "Administrator",
  "module": "Course Syllabus Builder",
  "name": "College Department",
@@ -79,6 +79,7 @@
    "write": 1
   }
  ],
+ "restrict_to_domain": "Course Syllabus Builder",
  "sort_field": "modified",
  "sort_order": "DESC"
 }

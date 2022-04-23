@@ -269,7 +269,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-04-21 00:10:40.033872",
+ "modified": "2022-04-23 22:52:33.822562",
  "modified_by": "Administrator",
  "module": "Course Syllabus Builder",
  "name": "Course Syllabus",
@@ -324,6 +324,7 @@
    "share": 1
   }
  ],
+ "restrict_to_domain": "Course Syllabus Builder",
  "sort_field": "modified",
  "sort_order": "DESC"
 }

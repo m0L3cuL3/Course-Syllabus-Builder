@@ -46,7 +46,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-04-17 16:52:34.056729",
+ "modified": "2022-04-23 22:52:45.140187",
  "modified_by": "Administrator",
  "module": "Course Syllabus Builder",
  "name": "Department Learning Outcomes",
@@ -65,6 +65,7 @@
    "write": 1
   }
  ],
+ "restrict_to_domain": "Course Syllabus Builder",
  "sort_field": "modified",
  "sort_order": "DESC"
 }
