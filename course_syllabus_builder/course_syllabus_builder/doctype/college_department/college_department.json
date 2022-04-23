@@ -26,7 +26,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-04-21 00:13:26.334879",
+ "modified": "2022-04-23 22:33:21.521665",
  "modified_by": "Administrator",
  "module": "Course Syllabus Builder",
  "name": "College Department",
@@ -51,7 +51,7 @@
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "Department Chair",
+   "role": "Faculty",
    "share": 1
   },
   {
@@ -62,7 +62,7 @@
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "Faculty",
+   "role": "Department Chair",
    "share": 1,
    "write": 1
   },
