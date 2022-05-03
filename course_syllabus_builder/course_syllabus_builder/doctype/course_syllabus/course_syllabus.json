@@ -268,8 +268,9 @@
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2022-04-23 22:52:33.822562",
+ "modified": "2022-05-03 15:27:54.249908",
  "modified_by": "Administrator",
  "module": "Course Syllabus Builder",
  "name": "Course Syllabus",
@@ -300,6 +301,7 @@
    "write": 1
   },
   {
+   "amend": 1,
    "create": 1,
    "delete": 1,
    "email": 1,
@@ -313,6 +315,8 @@
    "write": 1
   },
   {
+   "amend": 1,
+   "cancel": 1,
    "delete": 1,
    "email": 1,
    "export": 1,
@@ -321,7 +325,9 @@
    "report": 1,
    "role": "College Dean",
    "select": 1,
-   "share": 1
+   "share": 1,
+   "submit": 1,
+   "write": 1
   }
  ],
  "restrict_to_domain": "Course Syllabus Builder",
