@@ -1,4 +1,4 @@
-# Course Syllabus Builder (Work in Progress)
+# Course Syllabus Builder
 
 [![GitHub issues](https://img.shields.io/github/issues/m0L3cuL3/Course-Syllabus-Builder?style=plastic)](https://github.com/m0L3cuL3/Course-Syllabus-Builder/issues)
 [![GitHub stars](https://img.shields.io/github/stars/m0L3cuL3/Course-Syllabus-Builder?style=plastic)](https://github.com/m0L3cuL3/Course-Syllabus-Builder/stargazers)
